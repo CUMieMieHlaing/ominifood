@@ -1,0 +1,135 @@
+/*-------------------Basic Setup--------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial' sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+/*-------------------Reusable Components--------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/*---------------------Heading------------------------*/
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 240%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+/*-------------------Header Section--------------------*/
+
+header {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(img/meal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    border-radius: 30%;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:active,
+.main-nav li a:hover {
+    border-bottom: 2px solid darkorange;
+}
+
+
+/*-------------------Button Section--------------------*/
+
+.btn:link,
+.btn :visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 300;
+    border-radius: 200px;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn:active,
+.btn:hover {
+    background-color: darkkhaki;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    color: #fff;
+    background-color: darkorange;
+}
+
+.btn-full:active,
+.btn-full:hover {
+    background-color: darkkhaki;
+}
+
+.btn-ghost:link,
+.btn-full:visited {
+    color: darkorange;
+    border: 1px solid darkorange;
+}
+
+.btn-ghost:active,
+.bth-ghost:hover {
+    background-color: darkorange;
+    color: #fff;
+}
